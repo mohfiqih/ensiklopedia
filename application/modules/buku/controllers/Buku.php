@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dasbor extends MY_Controller {
+class Buku extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,7 +27,6 @@ class Dasbor extends MY_Controller {
     {
         // Load the constructer from MY_Controller
         parent::__construct();
-		$this->cek_login();
 		// $this->load->model('M_dasbor');
     }
 
@@ -38,21 +37,17 @@ class Dasbor extends MY_Controller {
      *
      * @return [type] [description]
      */
-	public function meta()
-	{
-	   $data_user	= $this->M_Universal->getOne(["user_id" => $this->user_id], "user");
-        $data = array(
-			"judul"			=> "Dashboard",
-			"keterangan"		=> "Contoh Keterangan",
-			"halaman"			=> "dasboard",
-			"view"			=> "dasboard",
-			"user"			=> $data_user
-	   );
-	   return $data;
-	}
-
 	public function index()
 	{
-		$this->load->view('template', $this->meta());
+	//    $data_user	= $this->M_Universal->getOne(["user_id" => $this->user_id], "user");
+        $data = array(
+			"judul"			=> "Dashboard",
+			"keterangan"	=> "Contoh Keterangan",
+			"halaman"		=> "v_buku",
+			"view"			=> "v_buku",
+			// "user"			=> $data_user
+	   );
+	 $this->load->view('v_buku', $data, FALSE);
+     
 	}
 }

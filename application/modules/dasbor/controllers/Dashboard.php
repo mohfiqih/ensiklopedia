@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Form extends MY_Controller {
+class Dashboard extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -38,31 +38,21 @@ class Form extends MY_Controller {
      *
      * @return [type] [description]
      */
-	public function index()
+	public function meta()
 	{
 	   $data_user	= $this->M_Universal->getOne(["user_id" => $this->user_id], "user");
         $data = array(
-			"judul"			=> "Form Input",
+			"judul"			=> "Dashboard",
 			"keterangan"	=> "Contoh Keterangan",
-			"halaman"		=> "v_form",
-			"view"			=> "v_form",
+			"halaman"		=> "v_dashboard",
+			"view"			=> "v_dashboard",
 			"user"			=> $data_user
 	   );
-	 $this->load->view('template', $data, FALSE);
-     
+	   return $data;
 	}
 
-	public function data_buah()
+	public function index()
 	{
-	   $data_user	= $this->M_Universal->getOne(["user_id" => $this->user_id], "user");
-        $data = array(
-			"judul"			=> "Data Buah",
-			"keterangan"	=> "Contoh Keterangan",
-			"halaman"		=> "data_buah",
-			"view"			=> "data_buah",
-			"user"			=> $data_user
-	   );
-	 $this->load->view('template', $data, FALSE);
-     
+		$this->load->view('template', $this->meta());
 	}
 }
