@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends MY_Controller {
+class Dasbor extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -44,8 +44,8 @@ class Dashboard extends MY_Controller {
         $data = array(
 			"judul"			=> "Dashboard",
 			"keterangan"	=> "Contoh Keterangan",
-			"halaman"		=> "v_dashboard",
-			"view"			=> "v_dashboard",
+			"halaman"		=> "dashboard",
+			"view"			=> "dashboard",
 			"user"			=> $data_user
 	   );
 	   return $data;
