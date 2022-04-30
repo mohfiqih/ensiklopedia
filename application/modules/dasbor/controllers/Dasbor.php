@@ -51,8 +51,18 @@ class Dasbor extends MY_Controller {
 	   return $data;
 	}
 
+	// public function data()
+	// {
+	// 	$data['page'] = 'input';
+	// 	$queryAllBuah = $this->M_Universal->getDataBuah();
+	// 	$data['queryAllBuah'] = $queryAllBuah;
+	// 	$data['jml_buah'] = $this->M_Universal->total_buah();
+	// 	$this->load->view('form/data_buah', $data,FALSE);
+	// }
+
 	public function index()
 	{
-		$this->load->view('template', $this->meta());
+	// 	$data['jml_buah'] = $this->M_Universal->total_buah();
+	$this->load->view('template', $this->meta());
 	}
 }

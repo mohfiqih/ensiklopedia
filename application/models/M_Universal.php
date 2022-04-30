@@ -74,18 +74,75 @@ class M_Universal extends CI_Model
         return ($this->db->insert_batch($tabel, $data)) ? true : false;
     }
 
-     public function upload($data = array())
-     {
-         return $this->db->insert_batch('berkas', $data);
-     }
+    public function upload($data = array())
+    {
+        return $this->db->insert_batch('berkas', $data);
+    }
      
-     public function get_kuesioner($where, $tabel)
-     {
-          if (!empty($where)) {
-               $this->db->where($where);
-           }
+    public function get_kuesioner($where, $tabel)
+    {
+        if (!empty($where)) {
+           $this->db->where($where);
+        }
            $data = $this->db->get($tabel)->result();
            return (count((array)$data) > 0) ? $data : false;
-     }
+    }
+
+    // function insertDataBuah($data)
+    // {
+    //     $this->db->insert('buah', $data);
+    // }
+
+    // function getDataBuahDetail($id_buah)
+    // {
+    //     $this->db->where('id_buah', $id_buah);
+    //     $query = $this->db->get('buah');
+    //     return $query->row();
+    // }
+
+    // function total_buah()
+    // {
+    //     return $this->db->get('buah')->num_rows();
+    // }
+
+    // function getDataBuah()
+    // {
+    //     $query = $this->db->get('buah');
+    //     return $query->result();
+    // }
+
+    // public function total_buah()
+    // {
+    //     return $this->db->get('buah')->num_rows();
+    // }
+
+    // public function getDataBuah()
+    // {
+    //     $query = $this->db->get('buah');
+    //     return $query->result();
+    // }
+
+    // public function insertDataBuah($data)
+    // {
+    //     $this->db->insert('buah', $data);
+    // }
+
+    // public function getDataBuahDetail($id_buah)
+    // {
+    //     $this->db->where('id_buah', $id_buah);
+    //     $query = $this->db->get('buah');
+    //     return $query->row();
+    // }
+    // public function updateDataBuah($id_buah, $data)
+    // {
+    //     $this->db->where('id_buah', $id_buah);
+    //     $this->db->update('buah', $data);
+    // }
+
+    // public function deleteDataBuah($id_buah)
+    // {
+    //     $this->db->where('id_buah', $id_buah);
+    //     $this->db->delete('buah');
+    // }
 }
 ?>

@@ -185,7 +185,7 @@
                     <ul id="side-menu">
                         <li class="menu-title">Navigation Menu</li>
                         <li>
-                            <a href="<?php echo base_url('dashboard'); ?>">
+                            <a href="<?php echo base_url('dasbor'); ?>">
                                 <i class="mdi mdi-view-dashboard "></i>
                                 <span>Dashboard</span>
                             </a>

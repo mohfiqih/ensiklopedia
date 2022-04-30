@@ -41,6 +41,31 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
+                    <!-- <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            Tambah Data
+                        </div>
+                        <div class="card-body">
+                            <?php echo form_open_multipart('form/data_buah'); ?>
+                            <div class="input mb-3">
+                                <h5>Nama Buah</h5>
+                                <input type="text" class="form-control" placeholder="Masukkan Nama Buah"
+                                    name="nama_buah" aria-label="Username" aria-describedby="basic-addon1" required>
+                            </div>
+                            <div class="input mb-3">
+                                <h5>Deskripsi Buah</h5>
+                                <input type="text" class="form-control" placeholder="Masukkan Deskripsi Buah"
+                                    name="deskripsi_buah" aria-label="Username" aria-describedby="basic-addon1"
+                                    required>
+                            </div>
+                            <label class="form-label" for="customFile"><b>Gambar Buah</b></label>
+                            <input type="file" name="gambar" class="form-control" id="customFile" /><br />
+                            <label class="form-label" for="customFile"><b>Audio Buah</b></label>
+                            <input type="file" name="audio" class="form-control" id="customFile" /><br />
+                            <button type="submit" class="btn bg-primary text-white">Tambah</button>
+                        </div>
+                        <?php echo form_close(); ?>
+                    </div> -->
                     <div class="card">
                         <div class="card-body">
                             <h4 class="header-title mb-3"><?php echo (uri(2) == 'edit') ? 'Edit' : 'Tambah'; ?> Buah
@@ -51,21 +76,21 @@
                                 <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>"
                                     value="<?php echo $this->security->get_csrf_hash(); ?>">
                                 <input type="hidden" name="user_id"
-                                    value="<?php echo uri(2) == "edit" ? enkrip($edit->user_id) : ""; ?>">
+                                    value="<?php echo uri(2) == "edit" ? enkrip($edit->id_buah) : ""; ?>">
 
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="nama"
-                                        value="<?php echo uri(2) == "edit" ? $edit->user_nama : ""; ?>"
+                                        value="<?php echo uri(2) == "edit" ? $edit->nama_buah : ""; ?>"
                                         placeholder="Nama Buah" autocomplete="off" required>
                                     <label>Nama Buah</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="deskripsi"
-                                        value="<?php echo uri(2) == "edit" ? $edit->user_password : ""; ?>"
+                                        value="<?php echo uri(2) == "edit" ? $edit->deskripsi_buah : ""; ?>"
                                         placeholder="Deskripsi" autocomplete="off" required>
                                     <label>Deskripsi</label>
                                 </div>
-                                <div class="form-floating mb-3">
+                                <!-- <div class="form-floating mb-3">
                                     <input type="file" class="form-control" name="gambar"
                                         value="<?php echo uri(2) == "edit" ? $edit->user_namalengkap : ""; ?>"
                                         autocomplete="off" required>
@@ -77,7 +102,7 @@
                                         autocomplete="off" required>
                                     <label>Audio Buah</label><br />
                                 </div>
-                                <!--<div class="form-floating mb-3">
+                                <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="user_namalengkap"
                                         value="<?php echo uri(2) == "edit" ? $edit->user_namalengkap : ""; ?>"
                                         placeholder="Nama Lengkap" autocomplete="off" required>
@@ -101,7 +126,7 @@
                                         </option>
                                     </select>
                                     <label for="example-select-floating">Level</label>
-                                </div>-->
+                                </div> -->
 
                                 <div class="text-left">
                                     <button type="submit"

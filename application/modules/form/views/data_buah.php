@@ -59,12 +59,47 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            Data Buah
+                        </div>
                         <div class="card-body">
-                            <!--<div class="card-header bg-primary text-white">
+                            <div class="row">
+                                <?php
+								$no=0+1;
+								foreach ($queryAllBuah as $d) {
+								?>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img style="width: 250px;height: 250px;"
+                                                src="<?php echo base_url(); ?>assets/gambar/<?php echo $d->gambar; ?>"
+                                                class="card-img-top" alt="..."><br /><br />
+                                            <b>
+                                                <h4><?php echo $d->nama_buah; ?>
+                                                </h4><br />
+                                            </b>
+                                            <h5 class="card-text"><?php echo $d->deskripsi_buah; ?>
+                                            </h5>
+                                            <br />
+                                            <button class="btn btn-warning text-white">
+                                                Edit
+                                            </button>
+                                            <a href="<?php echo base_url('.') ?>/<?php echo $d->id_buah ?>"
+                                                class="btn btn-danger text-white"
+                                                onclick="return confirm('Menghapus data?')">
+                                                Hapus
+                                            </a>
+                                        </div>
+                                    </div></br>
+                                </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                        <!--<div class="card-header bg-primary text-white">
                                 Data Buah
-                            </div>-->
-                            <!--<h4 class="header-title mb-3">Data Buah</h4>-->
-                            <table class="table table-striped table-hover table-vcenter"
+                            </div>
+                        <h4 class="header-title mb-3">Data Buah</h4>-->
+                        <!-- <table class="table table-striped table-hover table-vcenter"
                                 style="border-top:2px solid #eee">
                                 <thead>
                                     <tr>
@@ -74,7 +109,7 @@
                                         <th style="width:100px"></th>
                                     </tr>
                                 </thead>
-                                <!--<tbody>
+                        <tbody>
                                     <?php
 									if ($data_user){
 									foreach ($data_user as $d){
@@ -107,9 +142,8 @@
                                         <td class="text-center" colspan="4">Tidak ada data</td>
                                     </tr>
                                     <?php } ?>
-                                </tbody>-->
-                            </table>
-                        </div>
+                                </tbody>
+                            </table> -->
                     </div>
                 </div>
             </div>
