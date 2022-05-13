@@ -10,21 +10,29 @@
 </head>
 
 <body>
+
     <div id="sequence" class="seq">
+        <?php
+		if ($data_buah){
+		foreach ($data_buah as $d){ 
+	    ?>
         <ul class="seq-canvas">
             <li class="step1 valign">
                 <div class="vcenter" style="margin-right: 80px;">
-                    <h2 data-seq class="title">Pisang / Banana</h2></br>
+                    <h2 data-seq class="title"><?php echo $d->nama_buah; ?></h2></br>
                     <div class="col-sm-4">
-                        <img data-seq class="feature" src="<?php echo base_url('assets'); ?>/buku/images/pisang.png"
-                            alt="A cartoon illustration of half a coconut" style="width: 250px;height: 240px;" />
+                        <!-- <img data-seq class="feature" src="<?php echo base_url('assets'); ?>/buku/images/pisang.png"
+                            alt="A cartoon illustration of half a coconut" style="width: 250px;height: 240px;" /> -->
+                        <img style="width: 250px;height: 240px;"
+                            src="<?php echo base_url(); ?>assets/images/<?php echo $d->foto; ?>" class="card-img-top"
+                            alt="Pisang">
                     </div><br />
                 </div>
                 <div class="vcenter">
-                    <h3 data-seq class="title" style="color: black;">Aku adalah pisang</h3>
-                    <h3 data-seq class="title" style="color: black;">Berbentuk panjang</h3>
+                    <h3 data-seq class="title" style="color: black;"><?php echo $d->deskripsi; ?></h3>
+                    <!-- <h3 data-seq class="title" style="color: black;">Berbentuk panjang</h3>
                     <h3 data-seq class="title" style="color: black;">Berwarna kuning</h3>
-                    <h3 data-seq class="title" style="color: black;">Sumber karbohidrat</h3>
+                    <h3 data-seq class="title" style="color: black;">Sumber karbohidrat</h3> -->
                     <br /><br /><br />
                     <audio controls data-seq class="title">
                         <source src="horse.ogg" type="audio/ogg">
@@ -34,77 +42,7 @@
                     <p data-seq class="title" style="color: black">Play untuk suara</p>
                 </div>
             </li>
-            <!-- <li class="step1 valign">
-                <div class="vcenter" style="margin-right: 80px;">
-                    <h1 data-seq class="title">Pisang / Bananas</h1></br>
-                    <div class="col-sm-4">
-                        <img data-seq class="feature" src="<?php echo base_url('assets'); ?>/buku/images/pisang.png"
-                            alt="A cartoon illustration of half a bananas" style="width: 300px;height: 280px;" />
-                    </div><br />
-                    <div class="vcenter">
-                        <h3 data-seq class="title" style="color: black;">Aku adalah pisang</h3>
-                        <h3 data-seq class="title" style="color: black;">Berbentuk panjang</h3>
-                        <h3 data-seq class="title" style="color: black;">Berwarna kuning</h3>
-                        <h3 data-seq class="title" style="color: black;">Sumber karbohidrat</h3>
-                        <br /><br /><br />
-                        <audio controls data-seq class="title">
-                            <source src="horse.ogg" type="audio/ogg">
-                            <source src="<?php echo base_url('assets'); ?>/audio/pisang.mp3" type="audio/mpeg">
-                            Your browser does not support the audio tag.
-                        </audio>
-                        <p data-seq class="title" style="color: black">Play untuk suara</p>
-                    </div>
-                </div>
-            </li>-->
-            <!-- <li class="step1 valign seq-in">
-                    <div class="vcenter" style="margin-right: 80px;">
-                         <div class="transbox" style="height: 500px;width: 1300px;">
-                         <h1 data-seq class="title">Pisang / Banana</h1></br>
-                         <div class="col-sm-4">
-                              <img data-seq class="feature"
-                                   src="<?php echo base_url('assets'); ?>/buku/images/pisang.png"
-                                   alt="A cartoon illustration of half a banana" style="width: 300px;height: 260px;" />
-                         </div><br />
-                         <div class="vcenter">
-                              <h3 data-seq class="title" style="color: black;">Aku adalah pisang</h3>
-                              <h3 data-seq class="title" style="color: black;">Berbentuk panjang</h3>
-                              <h3 data-seq class="title" style="color: black;">Berwarna kuning</h3>
-                              <h3 data-seq class="title" style="color: black;">Sumber karbohidrat</h3>
-                              <br /><br /><br />
-                              <audio controls data-seq class="title">
-                                   <source src="horse.ogg" type="audio/ogg">
-                                   <source src="<?php echo base_url('assets'); ?>/audio/pisang.mp3" type="audio/mpeg">
-                                   Your browser does not support the audio tag.
-                              </audio>
-                              <p data-seq class="title" style="color: black">Play untuk suara</p>
-                         </div>
-                         </div>
-                    </div>
-               </li> -->
-            <!-- <div class="vcenter" style="margin-right: 80px;">
-                    <div class="transbox" style="height: 500px;width: 1000px;">
-                        <h1 data-seq class="title">Pisang / Banana</h1></br />
-                        <div class="col-sm-4">
-                            <img data-seq class="feature" src="<?php echo base_url('assets'); ?>/buku/images/pisang.png"
-                                alt="A cartoon illustration of a bunch of bananas"
-                                style="width: 250px;height: 250px;" />
-                        </div><br />
-                        <div class="vcenter">
-                            <h3 data-seq class="title" style="color: black;">Aku adalah pisang</h3>
-                            <h3 data-seq class="title" style="color: black;">Berbentuk panjang</h3>
-                            <h3 data-seq class="title" style="color: black;">Berwarna kuning</h3>
-                            <h3 data-seq class="title" style="color: black;">Sumber karbohidrat</h3>
-                            <br /><br /><br />
-                            <audio controls data-seq class="title">
-                                <source src="horse.ogg" type="audio/ogg">
-                                <source src="<?php echo base_url('assets'); ?>/audio/pisang.mp3" type="audio/mpeg">
-                                Your browser does not support the audio tag.
-                            </audio>
-                            <p data-seq class="title" style="color: black;">Play untuk suara</p>
-                        </div>
-                    </div>
-                </div> -->
-            <li class="step2 valign">
+            <!-- <li class="step2 valign">
                 <div class="vcenter" style="margin-right: 80px;">
                     <h2 data-seq class="title">Kelapa / Coconut</h2></br>
                     <div class="col-sm-4">
@@ -168,28 +106,6 @@
                     <p data-seq class="title" style="color: black;">Play untuk suara</p>
                 </div>
             </li>
-            <!-- <li class="step4 valign">
-                    <div class="vcenter" style="margin-right: 80px;">
-                         <h1 data-seq class="title">Anggur / Grape</h1></br>
-                         <div class="col-sm-4">
-                              <img data-seq class="feature"
-                                   src="<?php echo base_url('assets'); ?>/buku/images/anggur.png"
-                                   alt="A cartoon illustration of a round mango" style="width: 250px;height: 300px;" />
-                         </div><br />
-                    </div>
-                    <div class="vcenter">
-                         <h3 data-seq class="title" style="color: black;">Aku berbentuk bulat</h3>
-                         <h3 data-seq class="title" style="color: black;">Kulitku berwarna ungu atau hijau</h3>
-                         <h3 data-seq class="title" style="color: black;">Aku mengandung vitamin C</h3>
-                         <br /><br /><br />
-                         <audio controls data-seq class="title">
-                              <source src="horse.ogg" type="audio/ogg">
-                              <source src="<?php echo base_url('assets'); ?>/audio/anggur.mp3" type="audio/mpeg">
-                              Your browser does not support the audio tag.
-                         </audio>
-                         <p data-seq class="title" style="color: black;">Play untuk suara</p>
-                    </div>
-               </li> -->
             <li class="step5 valign">
                 <div class="vcenter" style="margin-right: 40px;">
                     <h2 data-seq class="title">Apel / Apple</h2></br>
@@ -425,22 +341,34 @@
                     </audio>
                     <p data-seq class="title" style="color: black;">Play untuk suara</p>
                 </div>
-            </li>
+            </li> -->
         </ul>
+        <?php }} else { ?>
+        <td class="text-center" colspan="6">Tidak ada data</td>
+        <?php } ?>
+
 
         <fieldset class="nav" style="max-width: 1200px;" aria-label="Slider buttons" aria-controls="sequence">
-
             <ul role="navigation" aria-label="Pagination" class="seq-pagination">
                 <button type="button" class="seq-prev" aria-label="Previous"><img
                         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/prev.svg" alt="Previous" /></button>
-
+                <?php
+                if ($data_buah){
+                foreach ($data_buah as $d){ 
+                ?>
                 <li class="seq-current">
-                    <a href="#step1" rel="step1" title="Go to banana">
-                        <img src="<?php echo base_url('assets'); ?>/buku/images/pisang.png" alt="Banana" width="40"
-                            height="35" />
+                    <a href="" rel="" title="Go to banana">
+                        <!-- <img src="<?php echo base_url('assets'); ?>/buku/images/pisang.png" alt="Banana" width="40"
+                            height="35" /> -->
+                        <img alt="Banana" width="40" height="35"
+                            src="<?php echo base_url(); ?>assets/images/<?php echo $d->foto; ?>">
                     </a>
                 </li>
-                <li>
+                <?php }} else { ?>
+                <td class="text-center" colspan="6">Tidak ada data</td>
+                <?php } ?>
+
+                <!-- <li>
                     <a href="#step2" rel="step2" title="Go to coconut">
                         <img src="<?php echo base_url('assets'); ?>/buku/images/kelapa.png" alt="Coconut" width="40"
                             height="35" />
@@ -523,16 +451,14 @@
                         <img src="<?php echo base_url('assets'); ?>/buku/images/nanas.png" alt="Pineapple" width="50"
                             height="40" />
                     </a>
-                </li>
+                </li> -->
                 <button type="button" class="seq-next" aria-label="Next"><img
                         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/next.svg" alt="Next" /></button>
             </ul>
-
-
-
         </fieldset>
 
     </div>
+
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/imagesloaded.pkgd.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/hammer.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/sequence.min.2.1.0.js'></script>

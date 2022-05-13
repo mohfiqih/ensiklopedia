@@ -88,6 +88,16 @@ class M_Universal extends CI_Model
            return (count((array)$data) > 0) ? $data : false;
     }
 
+    public function total_user()
+    {
+        return $this->db->get('user')->num_rows();
+    }
+
+    public function total_buah()
+    {
+        return $this->db->get('buah')->num_rows();
+    }
+
     // function insertDataBuah($data)
     // {
     //     $this->db->insert('buah', $data);

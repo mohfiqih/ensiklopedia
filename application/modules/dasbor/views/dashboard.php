@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<head>
+    <title>Dashboard</title>
+</head>
+
 <div class="content-page">
     <div class="content">
 
@@ -32,7 +34,8 @@
                                 <p class="card-title text-md-center text-xl-left">Total User</p>
                                 <div
                                     class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">User</h3>
+                                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0"><?php echo $jml_user; ?> User
+                                    </h3>
                                     <i class="ti-user icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
                                 </div>
                                 <p class="mb-0 mt-2 text-danger">Ensiklopedia Pintar Seri Buah <span
@@ -48,7 +51,8 @@
                                 <p class="card-title text-md-center text-xl-left">Total Data Buah</p>
                                 <div
                                     class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">Buah</h3>
+                                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0"><?php echo $jml_buah; ?> Buah
+                                    </h3>
                                     <i class="ti-layers-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
                                 </div>
                                 <p class="mb-0 mt-2 text-success">Ensiklopedia Pintar Seri Buah<span

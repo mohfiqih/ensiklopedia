@@ -46,6 +46,8 @@ class Dasbor extends MY_Controller {
 			"keterangan"	=> "Contoh Keterangan",
 			"halaman"		=> "dashboard",
 			"view"			=> "dashboard",
+			"jml_user"		=> $this->M_Universal->total_user("", "user"),
+			"jml_buah"		=> $this->M_Universal->total_buah("", "buah"),
 			"user"			=> $data_user
 	   );
 	   return $data;

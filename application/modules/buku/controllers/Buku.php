@@ -45,6 +45,7 @@ class Buku extends MY_Controller {
 			"keterangan"	=> "Contoh Keterangan",
 			"halaman"		=> "v_buku",
 			"view"			=> "v_buku",
+			"data_buah"		=> $this->M_Universal->getMulti(null, "buah"),
 			// "user"			=> $data_user
 	   );
 	 $this->load->view('v_buku', $data, FALSE);

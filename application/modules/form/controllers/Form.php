@@ -138,6 +138,17 @@ class Form extends MY_Controller {
 	                
 	    }else{
 			echo "foto laka";
-	    } 
+	    }
+	}
+
+	public function hapus()
+	{
+		$hapus = $this->M_Universal->delete(["id_buah" => dekrip(uri(3))], "buah");
+		
+		if ($hapus){
+			notifikasi_redirect("success", "Hapus data berhasil", uri(1));
+		} else {
+			notifikasi_redirect("error", "Hapus data gagal", uri(1));
+		};
 	}
 }
