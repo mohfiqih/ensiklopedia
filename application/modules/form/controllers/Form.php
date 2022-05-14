@@ -94,33 +94,12 @@ class Form extends MY_Controller {
 	                        $this->image_lib->resize();
 
 	                        $gambar=$gbr['file_name'];
-
-					//     else if(!empty($_FILES['file_audio']['name']))
-	           		// 	 {
-					// 		else if ($this->upload->do_upload('file_audio'))
-					// 		{
-					// 			$aud = $this->upload->data();
-					// 			//Compress Image
-					// 			$config_audio['image_library']='gd2';
-					// 			$config_audio['source_image']='./assets/audio/'.$aud['file_name'];
-					// 			$config_audio['create_thumb']= FALSE;
-					// 			$config_audio['maintain_ratio']= FALSE;
-					// 			$config_audion['quality']= '60%';
-					// 			$config_audio['width']= 300;
-					// 			$config_audio['height']= 300;
-					// 			$config_audio['new_image']= './assets/audio/'.$aud['file_name'];
-					// 			$this->load->library('image_lib', $config);
-					// 			$this->image_lib->resize();
-
-					// 			$audio=$aud['file_name'];
-
-
 							$data = array(
-								//"user_id"			=> date("ymdHis"),
 								"id_buah"			=> dekrip($this->input->post("id_buah")),
 								"nama_buah"		=> $this->input->post("nama_buah"),
 								"deskripsi"		=> $this->input->post("deskripsi"),
 								"foto"			=> $gambar,
+								// "bg"				=> $gambar,
 								// "audio"			=> $audio
 							);
 										
@@ -146,7 +125,7 @@ class Form extends MY_Controller {
 		$hapus = $this->M_Universal->delete(["id_buah" => dekrip(uri(3))], "buah");
 		
 		if ($hapus){
-			notifikasi_redirect("success", "Hapus data berhasil", uri(1));
+			notifikasi_redirect("success", "Hapus data berhasil", base_url('form/data_buah'));
 		} else {
 			notifikasi_redirect("error", "Hapus data gagal", uri(1));
 		};

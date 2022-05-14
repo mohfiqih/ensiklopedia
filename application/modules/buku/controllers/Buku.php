@@ -48,7 +48,7 @@ class Buku extends MY_Controller {
 			"data_buah"		=> $this->M_Universal->getMulti(null, "buah"),
 			// "user"			=> $data_user
 	   );
-	 $this->load->view('v_buku', $data, FALSE);
+	 $this->load->view('v_buku_new', $data, FALSE);
      
 	}
 }
