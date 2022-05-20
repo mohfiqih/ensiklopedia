@@ -26,8 +26,9 @@
                                              <label>Nama Buah</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                             <input type="text" class="form-control" name="deskripsi"
+                                             <textarea type="text" class="form-control" name="deskripsi"
                                                   placeholder="Deskripsi" autocomplete="off" required>
+                                             </textarea>
                                              <label>Deskripsi</label>
                                         </div>
 

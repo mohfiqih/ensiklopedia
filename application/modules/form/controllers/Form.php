@@ -61,7 +61,6 @@ class Form extends MY_Controller {
 			"halaman"		=> "data_buah",
 			"view"		=> "data_buah",
 			"data_buah"	=> $this->M_Universal->getMulti(NULL,"buah"),
-			// "data_manajemen"		=> $this->M_manajemen->get_manajemen(NULL, "manajemen"),
 			"user"		=> $data_user
 	   );
 	 $this->load->view('template', $data, FALSE);

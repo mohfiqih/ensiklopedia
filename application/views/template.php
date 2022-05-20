@@ -306,6 +306,18 @@
      <!-- <script src="https://cdn.tiny.cloud/1/po9r5rtyigi9k6233qld3yekxkqfn2haky39k30gv8chhdma/tinymce/6/tinymce.min.js"
           referrerpolicy="origin"></script> -->
      <!-- tiny 5 -->
+     <!-- <script src="https://cdn.tiny.cloud/1/po9r5rtyigi9k6233qld3yekxkqfn2haky39k30gv8chhdma/tinymce/5/tinymce.min.js"
+          referrerpolicy="origin"></script>
+     <script>
+     tinymce.init({
+          selector: 'textarea',
+          plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+          toolbar_mode: 'floating',
+          forced_root_block: false,
+          forced_p_block: false,
+     });
+     </script> -->
+
      <script src="https://cdn.tiny.cloud/1/po9r5rtyigi9k6233qld3yekxkqfn2haky39k30gv8chhdma/tinymce/5/tinymce.min.js"
           referrerpolicy="origin"></script>
      <script>
