@@ -25,7 +25,7 @@
                                    <h1 class="title"><?php echo $d->nama_buah ;?></h1></br>
                                    <h1 class="title" style="font-size: 20px;"><?php echo $d->deskripsi ;?></h1>
                               </div>
-                              <div class="column"><img
+                              <div class="column"><img width="500" height="500"
                                         src="<?php echo base_url(); ?>assets/images/<?php echo $d->foto; ?>"
                                         class="image burger"></div>
                          </div>
