@@ -45,10 +45,12 @@ class Buku extends MY_Controller {
 			"keterangan"	=> "Contoh Keterangan",
 			"halaman"		=> "v_buku",
 			"view"			=> "v_buku",
-			"data_buah"		=> $this->M_Universal->getMulti(null, "buah"),
+			"data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
+			// $this->load->model('carousel_m', '', TRUE);
 			// "user"			=> $data_user
 	   );
 	 $this->load->view('v_buku_tiga', $data, FALSE);
      
 	}
+	// $this->load->model('M_Universal', '', TRUE);
 }

@@ -154,5 +154,11 @@ class M_Universal extends CI_Model
     //     $this->db->where('id_buah', $id_buah);
     //     $this->db->delete('buah');
     // }
+
+    function buahGetAll()
+  {
+      $query="SELECT * FROM buah";
+      return $this->db->query($query)->result_array();
+  }
 }
 ?>
