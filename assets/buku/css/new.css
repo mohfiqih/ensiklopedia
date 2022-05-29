@@ -1,0 +1,17 @@
+.slide-astronaut {
+  background-image: url(../images/bg-new.png);
+  background-size: cover;
+}
+.slide-coffee {
+  background-image: url(../images/bg-new.png);
+  background-size: cover;
+}
+.slide-burger {
+  background-image: url(../images/bg-new.png);
+  background-size: cover;
+}
+/* .title {
+  color: antiquewhite;
+} */
+.column {
+}

@@ -52,7 +52,7 @@
      <!-- pop up -->
 
      <!-- App favicon -->
-     <!-- <link rel="shortcut icon" href="<?php echo base_url('assets/backend'); ?>/images/phb.png"> -->
+     <link rel="shortcut icon" href="<?php echo base_url('assets/frontend/images/epin-mini.png'); ?>">
 
      <!-- App css -->
      <link href="<?php echo base_url('assets/backend'); ?>/css/config/default/bootstrap.min.css" rel="stylesheet"

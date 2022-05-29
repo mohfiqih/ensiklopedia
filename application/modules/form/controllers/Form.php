@@ -105,7 +105,7 @@ class Form extends MY_Controller {
 							$tambah = $this->M_Universal->insert($data, "buah");
 
 							if ($tambah){
-								notifikasi_redirect("success", "Data berhasil ditambahkan", uri(1));
+								notifikasi_redirect("success", "Data berhasil ditambahkan", base_url('form/data_buah'));
 							} else {
 								notifikasi_redirect("error", "Gagal menambah data", uri(1));
 							};
