@@ -5,10 +5,9 @@
      <meta charset="UTF-8">
      <title>Ensiklopedia Pintar Seri Buah</title>
      <link rel="shortcut icon" href="<?php echo base_url('assets/frontend/images/epin-mini.png'); ?>">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-     <link rel='stylesheet'
-          href='https://mverissimo.github.io/tweenslideshow/dist/assets/stylesheet/application.min.css'>
+     <link type="text/css" href="<?php echo base_url('assets'); ?>/buku/css/font.css">
+     <link type="text/css" href="<?php echo base_url('assets'); ?>/buku/css/reset.min.css">
+     <link type="text/css" href="<?php echo base_url('assets'); ?>/buku/css/application.min.css">
      <link type="text/css" href="<?php echo base_url('assets'); ?>/buku/css/new.css" rel="stylesheet">
 
 </head>
@@ -70,7 +69,8 @@
                                         vitamin C</h1>
                               </div>
                               <div class="column"><img width="350" height="350" style="margin-bottom: 100px;" ;
-                                        src="<?php echo base_url('assets'); ?>/buku/images/jeruk.png" class="image cup">
+                                        src="<?php echo base_url('assets'); ?>/buku/images/jeruk.png"
+                                        class="image coffee">
                               </div>
                          </div>
                     </div>
@@ -81,8 +81,8 @@
           </div>
      </section>
      <!-- partial -->
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-     <script src='https://mverissimo.github.io/tweenslideshow/dist/assets/javascript/script.min.js'>
+     <script type="text/javascript" src="<?php echo base_url('assets'); ?>/buku/css/tweenmax.min.js"></script>
+     <script type="text/javascript" src="<?php echo base_url('assets'); ?>/buku/css/script.min.js">
      </script>
      <script src="./script.js"></script>
 
