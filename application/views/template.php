@@ -104,9 +104,9 @@
                          <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light"
                               data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                               aria-expanded="false">
-                              <!-- <img style="width: 30px;height: 30px;"
-                                   src="<?php echo base_url().'assets/images/'.$user->user_foto;?>" alt="repo-image"
-                                   class="rounded-circle"> -->
+                              <img style="width: 30px;height: 30px;"
+                                   src="<?php echo base_url().'assets/images/'.$user->user_foto;?>" alt="epin"
+                                   class="rounded-circle">
                               <span class="pro-user-name ms-1">
                                    <?php echo $user->user_namalengkap; ?>
                                    <i class="mdi mdi-chevron-down"></i>
@@ -138,11 +138,11 @@
                <div class="logo-box">
                     <a href="<?php echo base_url('.'); ?>" class="logo logo-light text-center">
                          <span class="logo-sm">
-                              <h4 class="d-inline">Repo</h4>
+                              <h4 class="d-inline">Epin</h4>
                          </span>
 
                          <span class="logo-lg">
-                              <h4 class="d-inline">Repo PHB</h4>
+                              <h4 class="d-inline">Epin</h4>
                          </span>
                     </a>
 
@@ -184,7 +184,7 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                          <ul id="side-menu">
-                              <li class="menu-title">Menu</li>
+                              <!-- <li class="menu-title">Menu</li> -->
                               <li>
                                    <a href="<?php echo base_url('dasbor'); ?>">
                                         <i class="mdi mdi-view-dashboard "></i>
@@ -203,35 +203,9 @@
                                         <span>Data Buah</span>
                                    </a>
                               </li>
-                              <!-- <li>
-                                   <a href="<?php echo base_url('manajemen'); ?>">
-                                        <i class="mdi mdi-view-dashboard "></i>
-                                        <span>Manajerial App</span>
-                                   </a>
-                              </li>
-                              <li>
-                                   <a href="<?php echo base_url('bankberkas'); ?>">
-                                        <i class="mdi mdi-folder-open"></i>
-                                        <span>Bank Berkas</span>
-                                   </a>
-                              </li>
-                              <li>
-                                   <a href="<?php echo base_url('banksoal/index'); ?>">
-                                        <i class="mdi mdi-book-multiple"></i>
-                                        <span>Bank Soal</span>
-                                   </a>
-                              </li>
-                              <li>
-                                   <a href="<?php echo base_url('banksoal/kuesioner'); ?>">
-                                        <i class="mdi mdi-dns"></i>
-                                        <span>Hasil Kuesioner</span>
-                                   </a>
-                              </li> -->
-
-                              <li class="menu-title mt-2">Master Data</li>
                               <li>
                                    <a href="<?php echo base_url('user'); ?>">
-                                        <i class="fa fa-users"></i>
+                                        <i class="fa fa-user"></i>
                                         <span>User</span>
                                    </a>
                               </li>
