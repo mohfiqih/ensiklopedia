@@ -140,7 +140,7 @@ class Form extends MY_Controller {
 		
 		// var_dump($data); die;
 		$this->M_Universal->insert($data, "buah");
-		notifikasi_redirect("success", "Update data berhasil", uri(1,"data_buah"));
+		notifikasi_redirect("success", "Update data berhasil", uri(1,"form/data_buah"));
 	}
 
 	public function hapus()

@@ -8,8 +8,8 @@
           <!-- Start Content-->
           <div class="container-fluid"><br />
                <div class="gambar" style="overflow-x: auto;">
-                    <img style="width: 1060px; height: 480px;overflow-x: auto;"
-                         src="<?php echo base_url('assets/frontend/images/new.jpg'); ?>" alt="">
+                    <!-- <img style="width: 1060px; height: 480px;overflow-x: auto;"
+                         src="<?php echo base_url('assets/menu/images/mock.png'); ?>" alt=""> -->
                </div>
                <div class="row">
                     <div class="col-md-12">

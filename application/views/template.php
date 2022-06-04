@@ -84,7 +84,7 @@
      <div id="wrapper">
 
           <!-- Topbar Start -->
-          <div class="navbar-custom" style="background-color: #fff;">
+          <div class="navbar-custom">
                <ul class="list-unstyled topnav-menu float-end mb-0">
                     <li class="dropdown d-inline-block d-lg-none">
                          <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light"

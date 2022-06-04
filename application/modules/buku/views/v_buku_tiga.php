@@ -24,31 +24,6 @@
 
           <div class="slider">
                <div class="slider__container">
-                    <!-- <?php
-                        if ($data_buah){
-                        foreach ($data_buah as $d){ 
-					?>
-
-                <div class="slider__item slide-burger">
-                    <div class="slider__content grid">
-                        <div class="column" style="padding-bottom: 20px;">
-                            <h1 class="title"
-                                style="font-size: 60px;color: black;margin-right: 50px;margin-bottom: 10px;">
-                                <?php echo $d->nama_buah ;?>
-                            </h1></br>
-                            <h1 class="title"
-                                style="color: white;font-size: 30px;margin-right: 50px;margin-bottom: 100px;">
-                                <?php echo $d->deskripsi ;?>
-                            </h1>
-                        </div>
-                        <div class="column"><img width="350" height="350" style="margin-bottom: 100px;" ;
-                                src="<?php echo base_url(); ?>assets/images/<?php echo $d->foto; ?>"
-                                class="image burger"></div>
-                    </div>
-                </div>
-                <?php }} else { ?>
-                <td class="text-center" colspan="6">Tidak ada data</td>
-                <?php } ?> -->
                     <div class="slider__item slide-burger">
                          <div class="slider__content grid">
                               <div class="column">
@@ -453,14 +428,20 @@
                                         style="font-size: 60px;color: black;margin-right: 50px;margin-bottom: 10px;">
                                         <?php echo $d->nama_buah ;?>
                                    </h1></br>
-                                   <h1 class="title"
-                                        style="color: white;font-size: 30px;margin-right: 50px;margin-bottom: 100px;">
+                                   <h1 class="title" style="color: white;font-size: 30px;margin-right: 50px;;">
                                         <?php echo $d->deskripsi ;?>
-                                   </h1>
+                                   </h1><br />
+                                   <div style="margin-right: 40px;">
+                                        <audio style="margin-right: 10px!important;" controls>
+                                             <source src="<?php echo base_url().'assets/audio/'.$d->audio;?>"
+                                                  type="audio/mpeg">
+                                        </audio>
+                                   </div>
                               </div>
                               <div class="column"><img width="350" height="350" style="margin-bottom: 100px;" ;
                                         src="<?php echo base_url(); ?>assets/images/<?php echo $d->foto; ?>"
                                         class="image burger"></div>
+
                          </div>
                     </div>
                     <?php }} else { ?>
