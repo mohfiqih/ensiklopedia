@@ -182,7 +182,7 @@
                                         Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
                                         seddiam nonu eirmod tempor invidunt labore.
                                    </p><br />
-                                   <a targer="_blank" href="<?php echo base_url('buku/buah') ?>"
+                                   <a target="_blank" href="<?php echo base_url('buku/buah') ?>"
                                         class="main-btn wow fadeInUp" data-wow-duration="1.3s"
                                         data-wow-delay="1.1s">Baca Buku</a>
                               </div>
