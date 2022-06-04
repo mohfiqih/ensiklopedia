@@ -69,14 +69,15 @@ class Form extends MY_Controller {
 
 	public function tambah()
 	{
-		$config['upload_path'] = './assets/images/'; //path folder
-		$config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-		$config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
-		$this->upload->initialize($config);
-		
 		if(!empty($_FILES['file_foto']['name']))
 	            {
+
+						$config['upload_path'] = './assets/images/'; //path folder
+						$config['allowed_types'] = 'gif|jpg|png|jpeg|bmp|mp3'; //type yang dapat diakses bisa anda sesuaikan
+						$config['encrypt_name'] = FALSE; //nama yang terupload nantinya
+
+						$this->upload->initialize($config);
 	                if ($this->upload->do_upload('file_foto'))
 	                {
 	                        $gbr = $this->upload->data();
@@ -93,30 +94,53 @@ class Form extends MY_Controller {
 	                        $this->image_lib->resize();
 
 	                        $gambar=$gbr['file_name'];
-							$data = array(
-								"id_buah"			=> dekrip($this->input->post("id_buah")),
-								"nama_buah"		=> $this->input->post("nama_buah"),
-								"deskripsi"		=> $this->input->post("deskripsi"),
-								"foto"			=> $gambar,
-								// "bg"				=> $gambar,
-								// "audio"			=> $audio
-							);
-										
-							$tambah = $this->M_Universal->insert($data, "buah");
+							
 
-							if ($tambah){
-								notifikasi_redirect("success", "Data berhasil ditambahkan", base_url('form/data_buah'));
-							} else {
-								notifikasi_redirect("error", "Gagal menambah data", uri(1));
-							};
-  
-	                }else{
+							// if ($tambah){
+							// 	notifikasi_redirect("success", "Data berhasil ditambahkan", base_url('form/data_buah'));
+							// } else {
+							// 	notifikasi_redirect("error", "Gagal menambah data", uri(1));
+							// };
+					}else{
 						echo "gagal upload";
-	                }
-	                
-	    }else{
+	                }				
+			}else{
 			echo "foto laka";
 	    }
+
+
+		##UPLOAD AUDIO##
+		if(!empty($_FILES['file_audio']['name']))
+	        {
+				$config_audio['upload_path'] = './assets/audio/'; //path folder
+				$config_audio['allowed_types'] = 'gif|jpg|png|jpeg|bmp|mp3'; //type yang dapat diakses bisa anda sesuaikan
+				$config_audio['encrypt_name'] = FALSE; //nama yang terupload nantinya
+
+				$this->upload->initialize($config_audio);
+
+	            if ($this->upload->do_upload('file_audio'))
+	                {
+	                    $mp3 = $this->upload->data();
+	                    $audio=$mp3['file_name'];
+		
+	            }else{
+	                    echo "gagal upload audio";
+	                }
+	                
+	        }
+
+
+		$data = array(
+			"nama_buah"		=> $this->input->post("nama_buah"),
+			"deskripsi"		=> $this->input->post("deskripsi"),
+			"foto"			=> $gambar,
+			// "bg"				=> $gambar,
+			"audio"			=> $audio
+		);
+		
+		// var_dump($data); die;
+		$this->M_Universal->insert($data, "buah");
+		notifikasi_redirect("success", "Update data berhasil", uri(1,"data_buah"));
 	}
 
 	public function hapus()

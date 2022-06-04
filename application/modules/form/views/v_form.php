@@ -37,20 +37,20 @@
                                         <div class="dz-message needsclick">
                                             <i class="h1 text-muted dripicons-cloud-upload"></i>
                                             <h3>Pilih Gambar Buah</h3>
-                                            <span class="text-muted font-13">(Type gambar jpg,jpeg,png)
+                                            <span class="text-muted font-13">(Type gambar png)
                                         </div>
                                     </center>
                                 </div><br />
-                                <!-- <div class="form-control" style="height: 200px;">
-                                             <input type="file" name="file_foto" multiple required>
-                                             <center>
-                                                  <div class="dz-message needsclick">
-                                                       <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                       <h3>Pilih Background Buah</h3>
-                                                       <span class="text-muted font-13">(Type gambar jpg,jpeg,png)
-                                                  </div>
-                                             </center>
-                                        </div> -->
+                                <div class="form-control" style="height: 200px;">
+                                    <input type="file" name="file_audio" multiple required>
+                                    <center>
+                                        <div class="dz-message needsclick">
+                                            <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                            <h3>Pilih Audio Buah</h3>
+                                            <span class="text-muted font-13">(Type audio mp3)
+                                        </div>
+                                    </center>
+                                </div>
                                 <br />
                                 <!-- <div class="form-control" style="height: 200px;">
                                              <input type="file" name="foto" multiple required>
