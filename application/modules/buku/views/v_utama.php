@@ -264,7 +264,7 @@
                          </div>
                          <!-- video content -->
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" id="about">
                          <div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                               <div class="counter-content">
                                    <div class="section-title">
