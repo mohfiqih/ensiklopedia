@@ -39,18 +39,37 @@ class Buku extends MY_Controller {
      */
 	public function index()
 	{
-	//    $data_user	= $this->M_Universal->getOne(["user_id" => $this->user_id], "user");
         $data = array(
-			"judul"			=> "Dashboard",
-			"keterangan"	=> "Contoh Keterangan",
-			"halaman"		=> "v_buku",
-			"view"			=> "v_buku",
+			"judul"			=> "Buku",
+			"keterangan"		=> "Contoh Keterangan",
+			"halaman"			=> "v_utama",
+			"view"			=> "v_utama",
+			// "data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
+	   );
+	 $this->load->view('v_utama', $data, FALSE);
+	}
+
+	public function buah()
+	{
+        $data = array(
+			"judul"			=> "Buku",
+			"keterangan"		=> "Contoh Keterangan",
+			"halaman"			=> "v_buku_tiga",
+			"view"			=> "v_buku_tiga",
 			"data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
-			// $this->load->model('carousel_m', '', TRUE);
-			// "user"			=> $data_user
 	   );
 	 $this->load->view('v_buku_tiga', $data, FALSE);
-     
 	}
-	// $this->load->model('M_Universal', '', TRUE);
+
+	public function dongeng()
+	{
+        $data = array(
+			"judul"			=> "Buku",
+			"keterangan"		=> "Contoh Keterangan",
+			"halaman"			=> "v_dongeng",
+			"view"			=> "v_dongeng",
+			// "data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
+	   );
+	 $this->load->view('v_dongeng', $data, FALSE);
+	}
 }
