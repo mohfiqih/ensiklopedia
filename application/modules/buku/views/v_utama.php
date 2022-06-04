@@ -209,8 +209,8 @@
                                         Lorem ipsum dolor sit amet,consetetur sadipscing elitr,
                                         seddiam nonu eirmod tempor invidunt labore.
                                    </p><br />
-                                   <a href="#features" class="main-btn wow fadeInUp bg-yellow" data-wow-duration="1.3s"
-                                        data-wow-delay="1.1s">Tonton Dongeng</a>
+                                   <a target="_blank" href="#features" class="main-btn wow fadeInUp bg-yellow"
+                                        data-wow-duration="1.3s" data-wow-delay="1.1s">Tonton Dongeng</a>
                               </div>
                          </div>
                          <!-- single services -->
