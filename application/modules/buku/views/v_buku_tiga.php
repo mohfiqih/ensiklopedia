@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Baca Buah Ensiklopedia Pintar</title>
+    <title>Baca Buku - EPIN PHB</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet'

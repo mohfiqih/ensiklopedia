@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
 
     <!--====== Title ======-->
-    <title>Menu Ensiklopedia Pintar - EPIN</title>
+    <title>Tonton Dongeng - EPIN PHB</title>
 
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,10 +50,10 @@
                         <img class="dots" src="<?php echo base_url('assets/menu/images/dots.svg'); ?>" alt="epin" />
                         <div class="video-wrapper">
                             <div class="video-image">
-                                <img src="<?php echo base_url('assets/menu/images/bg.png'); ?>" alt="video" />
+                                <img src="<?php echo base_url('assets/frontend/images/image.png'); ?>" alt="video" />
                             </div>
                             <div class="video-icon">
-                                <a href="<?php echo base_url('https://youtu.be/sMW_fy8Lttg'); ?>" class="video-popup"><i
+                                <a href="<?php echo base_url('assets/video/dongeng.mp4'); ?>" class="video-popup"><i
                                         class="lni-play"></i></a>
                             </div>
                         </div>
@@ -66,17 +66,20 @@
                         <div class="counter-content">
                             <div class="section-title">
                                 <div class="line"></div>
-                                <h3 class="title">About of <span> Project</span></h3>
-                            </div>
+                                <h3 class="title">Sinopsis<span> Dongeng</span></h3>
+                            </div><br />
                             <!-- section title -->
-                            <p class="text">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam
-                                nonumy eirmod tempor invidunt ut labore et dolore magna
-                                aliquyam erat, sed diam voluptua.
+                            <p class="text-justify">
+                                Si manggis sedang merenung di bawah pohon dan bersedih
+                                karena merasa dirinya tidak menarik dibanding dengan
+                                teman-temannya. Ia merasa bahwa dirinya tidak memiliki
+                                kulit yang cerah dan ia tidak suka menjadi dirinya sendiri.
+                                Kemudian si apel berusaha membuat si manggis lebih percaya diri.
+                                Dan akhirnya si manggis pun tidak bersedih lagi dan selalu ceria.
                             </p>
                         </div>
                         <!-- counter content -->
-                        <div class="row no-gutters">
+                        <!-- <div class="row no-gutters">
                             <div class="col-4">
                                 <div
                                     class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
@@ -85,7 +88,7 @@
                                         <p class="text">Downloads</p>
                                     </div>
                                 </div>
-                                <!-- single counter -->
+                                single counter
                             </div><br />
                             <div class="col-4">
                                 <div
@@ -95,7 +98,7 @@
                                         <p class="text">Active Users</p>
                                     </div>
                                 </div>
-                                <!-- single counter -->
+                                single counter
                             </div>
                             <div class="col-4">
                                 <div
@@ -105,9 +108,9 @@
                                         <p class="text">User Rating</p>
                                     </div>
                                 </div>
-                                <!-- single counter -->
+                                single counter
                             </div>
-                        </div>
+                        </div> -->
                         <!-- row -->
                     </div>
                     <!-- counter wrapper -->

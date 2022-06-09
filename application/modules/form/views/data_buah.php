@@ -48,9 +48,8 @@
                                                     </audio>
                                                 </div>
                                                 <a href="<?php echo url(1) .'/edit/'. enkrip($d->id_buah); ?>"
-                                                    class="btn btn-warning text-white"
-                                                    onclick="return confirm('Apakah Anda yakin?')"
-                                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Data">
+                                                    class="btn btn-warning text-white" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="Edit Data">
                                                     Edit
                                                 </a>
                                                 <a href="<?php echo url(1) .'/hapus/'. enkrip($d->id_buah); ?>"

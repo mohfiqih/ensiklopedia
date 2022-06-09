@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
 
     <!--====== Title ======-->
-    <title>Menu Ensiklopedia Pintar - EPIN</title>
+    <title>EPIN PHB</title>
 
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,9 +66,8 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand">
-                                <img width="110px" height="40px"
-                                    src="<?php echo base_url('assets/frontend/images/epin.png') ?>" alt=" Logo" /><span>
-                                    <!-- <p style="color: white;margin-left: 10px;"> Ensiklopedia Pintar</p> -->
+                                <img width="50px" height="50px"
+                                    src="<?php echo base_url('assets'); ?>/frontend/images/epin-mini.png" alt="logo" />
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -92,6 +91,9 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#footer">Contact</a>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -113,10 +115,10 @@
                                 Welcome To
                             </h3>
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                                EPINSERIBU
+                                EPIN PHB
                             </h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                                Ensiklopedia Pintar Seri Buah
+                                Ensiklopedia Pintar - Seri Buah
                             </p>
                             <!-- <a href="#features" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
                                         data-wow-delay="1.1s">Get Started</a> -->
@@ -129,7 +131,7 @@
                     <div class="col-lg-12">
                         <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s"
                             data-wow-delay="1.4s">
-                            <img src="<?php echo base_url('assets'); ?>/menu/images/mock.png" alt="hero">
+                            <img src="<?php echo base_url('assets'); ?>/frontend/images/anak.png" alt="hero">
                         </div> <!-- header hero image -->
                     </div>
                 </div> <!-- row -->
@@ -139,7 +141,7 @@
             <div id="particles-1" class="particles"></div>
         </div>
         <!-- header hero -->
-    </header>
+    </header><br />
 
     <section class="services-area pt-120">
         <div class="container">
@@ -147,8 +149,8 @@
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <h3 class="title" id="features">
-                            Ensiklopedia Pintar Seri Buah<br />
-                            <span>Aplikasi baca buku untuk anak usia 7-9 tahun</span>
+                            Aplikasi baca buku untuk anak usia 7-9 tahun<br />
+                            <!-- <span>Aplikasi baca buku untuk anak usia 7-9 tahun</span> -->
                         </h3><br />
                         <div class="line m-auto"></div>
                     </div>
@@ -160,15 +162,15 @@
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0.2s" style="
-                  background-image: url(https://cdn.kibrispdr.org/data/background-buah-buahan-11.jpg);
+                  background-image: url(https://i.pinimg.com/564x/58/a9/e0/58a9e0e73595dc368d89896fe2a4c346.jpg);
                   background-size: cover;
                 ">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape" />
-                            <img class="shape-1"
-                                src="https://png.pngtree.com/background/20210714/original/pngtree-tiled-fresh-background-of-cartoon-fruits-picture-image_1210766.jpg"
+                            <img class="shape" src="<?php echo base_url('assets/menu/images/services-shape.svg') ?>"
                                 alt="shape" />
-                            <i class="lni-baloon"></i>
+                            <img class="shape-1" src="<?php echo base_url('assets/menu/images/services-shape-2.svg') ?>"
+                                alt="shape" />
+                            <i class="lni-book"></i>
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title">
@@ -190,15 +192,15 @@
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0.5s" style="
-                background-image: url(https://thumbs.dreamstime.com/b/castello-di-fiaba-7712537.jpg);
+                background-image: url(https://i.pinimg.com/564x/4c/ff/1f/4cff1f911ab5490884f4210b2b435628.jpg);
                 background-size: cover;
               ">
                         <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape" />
-                            <img class="shape-1"
-                                src="https://ae01.alicdn.com/kf/HTB12v3_SFXXXXaSXFXXq6xXFXXXg/Dongeng-Putri-Puri-Pohon-Sungai-Rainbow-Jamur-kain-backdrop-Vinyl-Komputer-dicetak-dinding-Fotografi-Latar-Belakang.jpg"
+                            <img class="shape" src="<?php echo base_url('assets/menu/images/services-shape.svg') ?>"
                                 alt="shape" />
-                            <i class="lni-cog"></i>
+                            <img class="shape-1" src="<?php echo base_url('assets/menu/images/services-shape-3.svg') ?>"
+                                alt="shape" />
+                            <i class="lni-video"></i>
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">Menonton</a></h4>
@@ -251,7 +253,7 @@
                         <img class="dots" src="<?php echo base_url('assets/menu/images/dots.svg'); ?>" alt="epin" />
                         <div class="video-wrapper">
                             <div class="video-image">
-                                <img src="<?php echo base_url('assets/menu/images/bg.png'); ?>" alt="video" />
+                                <img src="<?php echo base_url('assets/frontend/images/bg.png'); ?>" alt="video" />
                             </div>
                             <div class="video-icon">
                                 <a href="<?php echo base_url('https://youtu.be/sMW_fy8Lttg'); ?>" class="video-popup"><i
@@ -286,7 +288,8 @@
                     </div> -->
             <!-- section title -->
             <p class="text-justify">
-                E-PIN merupakan sebuah aplikasi baca buku ensiklopedia pintar seri buah berbasis website untuk anak usia
+                EPIN PHB merupakan sebuah aplikasi baca buku ensiklopedia pintar seri buah berbasis website untuk anak
+                usia
                 7-9 tahun.
                 Website ini digunakan sebagai media pembelajaran untuk memudahkan proses belajar membaca anak-anak
                 dengan cara pengenalan macam-macam buah.
@@ -359,7 +362,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-7 col-sm-8">
                     <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="team-image">
+                        <!-- <div class="team-image">
                             <img src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2022/04/20720340df7292e525b8b72ab3c7a980.JPG"
                                 alt="Team" />
                             <div class="social">
@@ -378,17 +381,17 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="team-content">
                             <h5 class="holder-name"><a href="#">Ajeng Nur Sya'bani</a></h5>
-                            <p class="text">Founder and CEO</p>
+                            <p class="text">19040176</p>
                         </div>
                     </div>
                     <!-- single team -->
                 </div>
                 <div class="col-lg-6 col-md-7 col-sm-8">
                     <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="team-image">
+                        <!-- <div class="team-image">
                             <img src="https://cdn0-production-images-kly.akamaized.net/1ASJ-hbgZcyRur6ctSqdq0pCGoE=/1200x900/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2408594/original/026886000_1542204229-Chelsea_Islan_foto_by_Bambang_E_Ros__2_.jpg"
                                 alt="Team" />
                             <div class="social">
@@ -407,10 +410,10 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="team-content">
-                            <h5 class="holder-name"><a href="#">Nisa Hudani Nabila</a></h5>
-                            <p class="text">Sr. Software Engineer</p>
+                            <h5 class="holder-name"><a href="#">Nisa Hudani Nabilla</a></h5>
+                            <p class="text">19040004</p>
                         </div>
                     </div>
                     <!-- single team -->
@@ -433,27 +436,29 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <a class="logo" href="#">
-                                <img src="assets/images/logo.svg" alt="logo" />
-                            </a>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet consetetur sadipscing elitr,
-                                sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
-                                magna aliquyam.
-                            </p>
+                            <h4 class="contact-content">Contact Us</h4>
                             <ul class="social">
                                 <li>
-                                    <a href="#"><i class="lni-facebook-filled"></i></a>
-                                </li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="30" height="25"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/wa.png"
+                                                alt="logo" />
+                                        </i> 081902654771</a>
+                                </li><br />
                                 <li>
-                                    <a href="#"><i class="lni-twitter-filled"></i></a>
-                                </li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="30" height="30"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/ig.png"
+                                                alt="logo" />
+                                        </i> nhdnbilla</a>
+                                </li><br />
                                 <li>
-                                    <a href="#"><i class="lni-instagram-filled"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="lni-linkedin-original"></i></a>
-                                </li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="30" height="25"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/gmail.png"
+                                                alt="logo" />
+                                        </i> nisahudani99@gmail.com</a>
+                                </li><br />
                             </ul>
                         </div>
                         <!-- footer about -->
@@ -461,7 +466,7 @@
                     <div class="col-lg-5 col-md-7 col-sm-7">
                         <div class="footer-link d-flex mt-50 justify-content-md-between">
                             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="footer-title">
+                                <!-- <div class="footer-title">
                                     <h4 class="title">Quick Link</h4>
                                 </div>
                                 <ul class="link">
@@ -470,11 +475,11 @@
                                     <li><a href="#">Refund Policy</a></li>
                                     <li><a href="#">Terms of Service</a></li>
                                     <li><a href="#">Pricing</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <!-- footer wrapper -->
                             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="footer-title">
+                                <!-- <div class="footer-title">
                                     <h4 class="title">Resources</h4>
                                 </div>
                                 <ul class="link">
@@ -483,7 +488,7 @@
                                     <li><a href="#">Portfolio</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Contact</a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <!-- footer wrapper -->
                         </div>
@@ -491,7 +496,7 @@
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-5">
                         <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                            <div class="footer-title">
+                            <!-- <div class="footer-title">
                                 <h4 class="title">Contact Us</h4>
                             </div>
                             <ul class="contact">
@@ -502,7 +507,7 @@
                                     123 Stree New York City , United <br />
                                     States Of America 750.
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <!-- footer contact -->
                     </div>
@@ -515,9 +520,12 @@
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
-                                <p class="text">
+                                <!-- <p class="text">
                                     Designed and Developed by
                                     <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+                                </p> -->
+                                <p class="text">
+                                    Copyright © EPIN PHB - AJENG BILLA 2022
                                 </p>
                             </div>
                             <!-- copyright content -->
