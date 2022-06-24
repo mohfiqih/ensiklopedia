@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8fafb; }
+  background-image: url(../images/bgepin.jpg);
+  background-size: cover; }
 
 p {
   color: #b3b3b3;

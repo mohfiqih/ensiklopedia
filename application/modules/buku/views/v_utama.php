@@ -63,12 +63,16 @@
         <div class="navbar-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-5">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand">
+                            <a>
                                 <img width="50px" height="50px"
-                                    src="<?php echo base_url('assets'); ?>/frontend/images/epin-mini.png" alt="logo" />
+                                    src="<?php echo base_url(); ?>/assets/frontend/images/logo.svg" />
                             </a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-7">
+                        <nav class="navbar navbar-expand-lg">
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +122,8 @@
                                 EPIN PHB
                             </h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                                Ensiklopedia Pintar - Seri Buah
+                                Ensiklopedia Pintar - Seri Buah<br />
+                                Aplikasi Baca Buku Untuk Anak Usia 7-9 Tahun
                             </p>
                             <!-- <a href="#features" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
                                         data-wow-delay="1.1s">Get Started</a> -->
@@ -147,12 +152,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="section-title text-center pb-40">
-                        <h3 class="title" id="features">
-                            Aplikasi baca buku untuk anak usia 7-9 tahun<br />
-                            <!-- <span>Aplikasi baca buku untuk anak usia 7-9 tahun</span> -->
-                        </h3><br />
+                    <div class="section-title text-center pb-40"><br />
                         <div class="line m-auto"></div>
+                        <h3 class="title" id="features">
+                            Features<br />
+                            <!-- <span>Aplikasi baca buku untuk anak usia 7-9 tahun</span> -->
+                        </h3>
                     </div>
                     <!-- section title -->
                 </div>
@@ -163,8 +168,7 @@
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0.2s" style="
                   background-image: url(https://i.pinimg.com/564x/58/a9/e0/58a9e0e73595dc368d89896fe2a4c346.jpg);
-                  background-size: cover;
-                ">
+                  background-size: cover;">
                         <div class="services-icon">
                             <img class="shape" src="<?php echo base_url('assets/menu/images/services-shape.svg') ?>"
                                 alt="shape" />
@@ -182,8 +186,8 @@
                                 Terdapat gambar animasi buah, deskripsi singkat, serta audio yang dapat membantu proses
                                 belajar membaca.
                             </p><br />
-                            <a target="_blank" href="<?php echo base_url('buku/buah') ?>" class="main-btn wow fadeInUp"
-                                data-wow-duration="1.3s" data-wow-delay="1.1s">Baca</a>
+                            <a target="_blank" href="<?php echo base_url('buku/pisang') ?>"
+                                class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Baca</a>
                         </div>
                     </div>
                     </a>
@@ -436,37 +440,71 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <h4 class="contact-content">Contact Us</h4>
+                            <h4 class="contact-content">
+                                <font color='white'>Contact Us</font>
+                            </h4>
                             <ul class="social">
                                 <li>
                                     <a href="#"><i class="fa-gmail">
-                                            <img width="30" height="25"
-                                                src="<?php echo base_url('assets'); ?>/frontend/images/wa.png"
-                                                alt="logo" />
-                                        </i> 081902654771</a>
-                                </li><br />
-                                <li>
-                                    <a href="#"><i class="fa-gmail">
-                                            <img width="30" height="30"
+                                            <img width="20" height="20"
                                                 src="<?php echo base_url('assets'); ?>/frontend/images/ig.png"
                                                 alt="logo" />
                                         </i> nhdnbilla</a>
                                 </li><br />
                                 <li>
                                     <a href="#"><i class="fa-gmail">
-                                            <img width="30" height="25"
+                                            <img width="20" height="20"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/wa.png"
+                                                alt="logo" />
+                                        </i> 081902654771</a>
+                                </li><br />
+                                <li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="20" height="20"
                                                 src="<?php echo base_url('assets'); ?>/frontend/images/gmail.png"
                                                 alt="logo" />
                                         </i> nisahudani99@gmail.com</a>
                                 </li><br />
-                            </ul>
+                                <li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="20" height="20"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/wa.png"
+                                                alt="logo" />
+                                        </i> 085725265173</a>
+                                </li><br />
+                                <li>
+                                    <a href="#"><i class="fa-gmail">
+                                            <img width="20" height="20"
+                                                src="<?php echo base_url('assets'); ?>/frontend/images/gmail.png"
+                                                alt="logo" />
+                                        </i> ajengns592@gmail.com</a>
+                                </li><br />
+                            </ul><br />
+                            <div class="footer-copyright">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="copyright d-sm-flex justify-content-between">
+                                            <div class="copyright-content">
+                                                <p class="text">
+                                                    Copyright © 2022 EPIN PHB - AJENG BILLA
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- footer about -->
                         </div>
-                        <!-- footer about -->
                     </div>
-                    <div class="col-lg-5 col-md-7 col-sm-7">
+                </div>
+            </div>
+        </div>
+        <div id="particles-2"></div>
+    </footer>
+    <!-- <div class="col-lg-5 col-md-7 col-sm-7">
                         <div class="footer-link d-flex mt-50 justify-content-md-between">
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <!-- <div class="footer-title">
+                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"> -->
+    <!-- <div class="footer-title">
                                     <h4 class="title">Quick Link</h4>
                                 </div>
                                 <ul class="link">
@@ -476,10 +514,10 @@
                                     <li><a href="#">Terms of Service</a></li>
                                     <li><a href="#">Pricing</a></li>
                                 </ul> -->
-                            </div>
-                            <!-- footer wrapper -->
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <!-- <div class="footer-title">
+    <!-- </div> -->
+    <!-- footer wrapper -->
+    <!-- <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s"> -->
+    <!-- <div class="footer-title">
                                     <h4 class="title">Resources</h4>
                                 </div>
                                 <ul class="link">
@@ -489,14 +527,14 @@
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul> -->
-                            </div>
-                            <!-- footer wrapper -->
-                        </div>
-                        <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-5">
-                        <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                            <!-- <div class="footer-title">
+    <!-- </div> -->
+    <!-- footer wrapper -->
+    <!-- </div> -->
+    <!-- footer link -->
+    <!-- </div> -->
+    <!-- <div class="col-lg-3 col-md-5 col-sm-5">
+                        <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"> -->
+    <!-- <div class="footer-title">
                                 <h4 class="title">Contact Us</h4>
                             </div>
                             <ul class="contact">
@@ -508,38 +546,38 @@
                                     States Of America 750.
                                 </li>
                             </ul> -->
-                        </div>
-                        <!-- footer contact -->
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- footer widget -->
-            <div class="footer-copyright">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright d-sm-flex justify-content-between">
-                            <div class="copyright-content">
-                                <!-- <p class="text">
+    <!-- </div> -->
+    <!-- footer contact -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- row -->
+    <!-- </div> -->
+    <!-- footer widget -->
+    <!-- <div class="footer-copyright">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="copyright d-sm-flex justify-content-between">
+                                        <div class="copyright-content"> -->
+    <!-- <p class="text">
                                     Designed and Developed by
                                     <a href="https://uideck.com" rel="nofollow">UIdeck</a>
                                 </p> -->
-                                <p class="text">
-                                    Copyright © EPIN PHB - AJENG BILLA 2022
-                                </p>
-                            </div>
-                            <!-- copyright content -->
-                        </div>
-                        <!-- copyright -->
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- footer copyright -->
-        </div>
-        <!-- container -->
-        <div id="particles-2"></div>
-    </footer>
+    <!-- <p class="text">
+                                                Copyright © EPIN PHB - AJENG BILLA 2022
+                                            </p>
+                                        </div> -->
+    <!-- copyright content -->
+    <!-- </div> -->
+    <!-- copyright -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- row -->
+    <!-- </div> -->
+    <!-- footer copyright -->
+    <!-- </div> -->
+    <!-- container -->
+    <!-- <div id="particles-2"></div>
+    </footer> -->
 
     <!--====== FOOTER PART ENDS ======-->
 
