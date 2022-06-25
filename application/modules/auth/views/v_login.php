@@ -38,23 +38,30 @@
      }
      </script>
 
-     <title>Login Ensiklopedia Pintar Seri Buah</title>
+     <title>Login | EPIN PHB</title>
 </head>
 
-<body>
+<body style="background-image: url(https://cdn.pixabay.com/photo/2020/01/13/21/31/illustration-4763593_1280.jpg)!important;
+  background-size: cover; ">
      <div class="content">
           <div class="container">
                <div class="row">
-                    <div class="col-md-6">
-                         <img src="<?php echo base_url('assets'); ?>/login/images/undraw_remotely_2j6y.svg" alt="Image"
+                    <div class="col-md-6"><br /><br />
+                         <img src="<?php echo base_url('assets'); ?>/login/images/anak.png" alt="Image"
                               class="img-fluid">
                     </div>
                     <div class="col-md-6 contents">
                          <div class="row justify-content-center">
                               <div class="col-md-8">
                                    <div class="mb-4">
-                                        <h3>Sign In</h3>
-                                        <p class="mb-4">Welcome!</p>
+                                        <a>
+                                             <img width="200px" height="60px"
+                                                  src="<?php echo base_url('assets'); ?>/login/images/logo.png" />
+                                        </a><br /><br />
+                                        <!-- <h3>Login</h3> -->
+                                        <p class="mb-4">
+                                             <font color='black' </font>Welcome!
+                                        </p>
                                    </div>
 
                                    <form action="auth/proses" method="post">
@@ -65,7 +72,7 @@
                                         <div class="form-group first">
                                              <label for="username">Username</label>
                                              <input name="username" type="text" class="form-control" id="username"
-                                                  required="required">
+                                                  required="required" autocomplete="off">
 
                                         </div>
                                         <div class="form-group last mb-4">
@@ -74,34 +81,35 @@
                                                   required="required">
 
                                         </div>
-
-                                        <div class="d-flex mb-5 align-items-center">
-                                             <label class="control control--checkbox mb-0"><span
-                                                       class="caption">Remember
-                                                       me</span>
-                                                  <input type="checkbox" checked="checked" />
-                                                  <div class="control__indicator"></div>
-                                             </label>
-                                             <span class="ml-auto"><a href="#" class="forgot-pass">Forgot
-                                                       Password</a></span>
+                                        <div class="submit">
+                                             <input type="submit" value="Login" class="btn btn-block btn-primary">
                                         </div>
+                                        <!-- <div class="d-flex mb-5 align-items-center">
+                                    <label class="control control--checkbox mb-0"><span class="caption">Remember
+                                            me</span>
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot
+                                            Password</a></span>
+                                </div>
 
-                                        <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                                <input type="submit" value="Log In" class="btn btn-block btn-primary">
 
-                                        <span class="d-block text-left my-4 text-muted">&mdash; or login with
-                                             &mdash;</span>
+                                <span class="d-block text-left my-4 text-muted">&mdash; or login with
+                                    &mdash;</span>
 
-                                        <div class="social-login">
-                                             <a href="#" class="facebook">
-                                                  <span class="icon-facebook mr-3"></span>
-                                             </a>
-                                             <a href="#" class="twitter">
-                                                  <span class="icon-twitter mr-3"></span>
-                                             </a>
-                                             <a href="#" class="google">
-                                                  <span class="icon-google mr-3"></span>
-                                             </a>
-                                        </div>
+                                <div class="social-login">
+                                    <a href="#" class="facebook">
+                                        <span class="icon-facebook mr-3"></span>
+                                    </a>
+                                    <a href="#" class="twitter">
+                                        <span class="icon-twitter mr-3"></span>
+                                    </a>
+                                    <a href="#" class="google">
+                                        <span class="icon-google mr-3"></span>
+                                    </a>
+                                </div> -->
                                    </form>
                               </div>
                          </div>
