@@ -103,8 +103,8 @@
                 <li class="dropdown notification-list topbar-dropdown">
                     <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown"
                         href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img style="width: 30px;height: 30px;"
-                            src="<?php echo base_url().'assets/images/'.$user->user_foto;?>" class="rounded-circle">
+                        <!-- <img style="width: 30px;height: 30px;"
+                            src="<?php echo base_url().'assets/images/'.$user->user_foto;?>" class="rounded-circle"> -->
                         <span class="pro-user-name ms-1">
                             <?php echo $user->user_namalengkap; ?>
                             <i class="mdi mdi-chevron-down"></i>
@@ -151,7 +151,7 @@
                     </span>
                     <span class="logo-lg">
                         <!-- <h4 class="d-inline">Repo PHB</h4> -->
-                        <img class="d-inline" style="width: 110px;height: 40px;"
+                        <img class="d-inline" style="width: 140px;height: 40px;"
                             src="<?php echo base_url('assets/frontend/images/epin.png'); ?>">
                     </span>
                 </a>
@@ -235,8 +235,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        Copyright &copy; Ensiklopedia Pintar
-                        2022</a>
+                        Copyright &copy; 2022 EPIN PHB -
+                        AJENG BILLA</a>
                     </div>
                     <div class="col-md-6">
                         <div class="text-md-end footer-links d-none d-sm-blocks">

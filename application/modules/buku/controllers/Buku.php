@@ -61,6 +61,30 @@ class Buku extends MY_Controller {
 	 $this->load->view('v_buku_tiga', $data, FALSE);
 	}
 
+	// public function pisang()
+	// {
+     //    $data = array(
+	// 		"judul"			=> "Buku",
+	// 		"keterangan"		=> "Contoh Keterangan",
+	// 		"halaman"			=> "v_pisang",
+	// 		"view"			=> "v_pisang",
+	// 		"data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
+	//    );
+	//  $this->load->view('v_pisang', $data, FALSE);
+	// }
+
+	// public function kelapa()
+	// {
+     //    $data = array(
+	// 		"judul"			=> "Buku",
+	// 		"keterangan"		=> "Contoh Keterangan",
+	// 		"halaman"			=> "v_kelapa",
+	// 		"view"			=> "v_kelapa",
+	// 		"data_buah"		=> $this->M_Universal->getMulti(NULL, "buah"),
+	//    );
+	//  $this->load->view('v_kelapa', $data, FALSE);
+	// }
+
 	public function dongeng()
 	{
         $data = array(
